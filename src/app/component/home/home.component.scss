@@ -1,0 +1,23 @@
+.h1 {
+    width: 290px;
+    height: 37px;
+    text-align: left;
+    font: normal normal bold 25px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.example-button-row {
+    display: table-cell;
+    width: 490px;
+}
+
+.a {
+    align-items: flex-end;
+}
+
+table {
+    width: 100%;
+  }

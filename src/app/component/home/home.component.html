@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div fxLayout="column" fxLayoutAlign="center none" style="margin-left: 100px;" fxLayoutGap="50px">
+  <h1 class="h1">Employee Details</h1>
+  <section>
+    <div class="example-button-row">
+      <button mat-raised-button (click)="onAdd()" target="_blank">+ Add User</button>
+    </div>
+  </section>
+  <table class="css-serial" style="border: 1px solid;margin-left:auto;margin-right:auto;margin-top: 50px;" BORDER="7"
+    WIDTH="70%" CELLPADDING="18" CELLSPACING="0">
+    <thead>
+      <tr style="border: 1px solid #DCDCDC;background-color: gainsboro" >
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>StartDate</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employee">
+        <td>{{emp.imagePath}} {{emp.name}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.departments}}</td>
+        <td>{{emp.salary}}</td>
+        <td>{{emp.notes}}</td>
+        <td>
+          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" >
+          <img src="../../../assets/images/deleteIcon.svg" alt="">
+          <img src="../../../assets/images/editIcon.svg" alt="">
+      </div>
+      </td>      </tr>
+    </tbody>
+  </table>
+
+</div>
